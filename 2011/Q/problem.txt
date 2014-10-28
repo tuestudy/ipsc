@@ -1,0 +1,60 @@
+The above error message is, of course, completely fake. Actual server overload
+issues have entirely different symptoms, as anyone who has been using the
+internet long enough knows. Overloaded servers often drop connections, time out
+or disconnect in the middle of a response. But this response is, in fact,
+complete. It's just that the server was intentionally set up to blank out most
+of the characters.
+
+Thus, your first priority in this task is to figure out the actual problem
+statement. The server periodically changes which characters get blanked out, so
+the most straightforward way to decode the whole message is to do exactly as the
+first paragraph says: just try again later -- and again, and again, and again,
+until you collect enough characters to reconstruct the rest. This can be done
+manually by refreshing the page in a browser (the most common key shortcut for
+that is F5), but it's simpler (and, according to our testers, more sanity
+preserving) to write a script that automates this task. Under UNIX, one could
+use wget or curl, but those aren't the only options by far.
+
+Anyway, if you can read this, you must have successfully done just that! That's
+great! Allow me, the author of this task, to congratulate you on behalf of the
+whole IPSC organizing team. We're really proud of you and hope you win. Good
+luck in the actual contest tomorrow! (Or today, depending on when you read
+this.)
+
+Now, to the task at hand. For the easy data set, the situation looks like this:
+As is often the case, the first line of the easy input file contains an integer
+T. T test cases follow, each preceded by a blank line. (That's a pretty common
+convention in IPSC.) However, in this particular task, the blank line doesn't
+have any real purpose -- every test case consists of a single integer. Let's
+call this integer A. (A is for "aardvark". I always liked that word.) For each
+test case, answer a single integer B. (B is for "buffalo". Buffalo buffalo
+Buffalo buffalo buffalo buffalo Buffalo buffalo. Get it?) It can be pretty much
+anything, but it can't be the same number as A. Aside from that single
+condition, we're pretty lenient. There is no single right answer, so don't
+hesitate to express your individuality! (There are wrong answers, though. Try to
+avoid them, okay?)
+
+Oh, almost forgot! It is also an IPSC convention that problem statements should
+include a story. Everyone is surely eagerly awaiting the story, and it wouldn't
+do to let our fans down, right? Let me think of something... Alright, here goes:
+Alice and Bob are playing a game. Alice is thinking of a number A and Bob is
+trying to guess it. What Alice doesn't know is that Bob is psychic and already
+knows her number. He's bored of winning all the time, so he wants to lose on
+purpose by guessing a number different from A. However, he doesn't want to
+appear too incompetent, so it shouldn't differ from A by more than one hundred.
+Your answers must follow this rule, or Alice could get bored too, and that's
+never a good thing.
+
+In the hard data set, there is an additional rule: the parity of the test case
+number and your answer must differ. In other words, in the first, third, fifth
+etc. test cases, your answer must be even, and in every second test case, your
+answer must be odd.
+
+The output file should contain T numbers, one for each test case, separated by
+at least one whitespace. (Extra whitespace doesn't matter.) All numbers in the
+input file are integers between one and one billion, inclusive. The numbers in
+the output file must satisfy that constraint as well for your solution to be
+valid.
+
+That's it. Any solution that satisfies the given conditions will be accepted.
+Easy as pie, right?
