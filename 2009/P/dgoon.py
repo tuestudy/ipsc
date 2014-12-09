@@ -88,7 +88,7 @@ def escape(maze, start):
     moves.append(moves[-1])
     return ' '.join(str(x) for x in moves)
 
-R, C = [int(x) for x in input().strip().split()]
+R, C = tuple(map(int, input().split()))
 maze = []
 for r in range(R):
     maze.append([int(x) for x in input().strip().split()])
