@@ -4,7 +4,7 @@ from sys import stdin
 
 N = 42
 
-def solve(line):
+def solve1(line):
     words = line.split()
     word_set = set(words)
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     for line in stdin:
         line = line.strip()
         if len(line) > 0:
-            result = solve(line)
+            result = solve1(line)
             print(result)
             
     
