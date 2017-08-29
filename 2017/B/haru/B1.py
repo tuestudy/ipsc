@@ -103,5 +103,5 @@ if __name__ == '__main__':
                 print('impossible')
             else:
                 for r, c in result:
-                    print('{} {}'.format(r + 1, + c + 1))
+                    print('{} {}'.format(r + 1, c + 1))
             print('') # print a blank line
